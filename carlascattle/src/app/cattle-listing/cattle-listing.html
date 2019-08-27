@@ -1,0 +1,36 @@
+<div class="row" >
+  <div class="col-1"></div>
+  <div class="col-10">
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th width="100">Cattle Id</th>
+              <th width="100">Latitude</th>
+              <th width="100">Longitude</th>
+              <th width="100">Status</th>
+              <th width="100">Description</th>
+    
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5">
+                  <div class="scrollit" style="height: 500px;">
+                      <table > 
+                          <tr *ngFor="let record of positions">
+                              <td width="200">  {{record.id}}</td>
+                              <td width="200">{{record.lat}}</td>
+                              <td width="250">{{record.lng}}</td>
+                              <td width="200"><img class="custom-icon" [src]= "record.icon" /></td>
+                              <td width="250">{{record.desc}}</td>
+                            </tr>
+                      </table>
+                  </div>
+    
+              </td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  <div class="col-1"></div>
+  </div>

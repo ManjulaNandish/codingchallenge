@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+body, html {
+    height: 100%;
+    width: 100%;
+}
+.angular-google-map-container {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+.middle {
+    display: table;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+Use bootstraps container w/ some overrides, nice thing about this on bootstrap is there is
+psuedo element with clearfix and display: table; , all after (which is why I know .middle works above)
+*/
+.container{
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gm-svpc {
+    display: none;
+}
+.gmnoprint {
+  display: none;
+}
+
+.status-legends {
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    margin-left: 26px;
+    text-align: center;
+    border-radius: 15px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.status-legends .legend-panel {
+    padding: 10px;
+
+    div {
+        padding-bottom: 10px;
+        text-align: left;
+        padding-left: 5px;
+        img {
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+
+#legend {
+    font-family: --primary-font;
+    background: #fff;
+    padding: 6px;
+    margin: 10px;
+    border: 3px solid #dbdbdb;
+    border-radius: 23px;
+}
+
+.gm-zoom-button {
+  padding-bottom: 2% !important;
+  padding-right: 2% !important;
+  bottom: 0px !important;
+}
+
+.zoom-in-out-button {
+  border-color: gray;
+  border-width: 1px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.zoom-in-out-button {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+}
+
+.zoom-in-button {
+  width: 32px;
+  height: 50px;
+}
+
+.zoom-out-button {
+  width: 32px;
+  height: 52px;
+}
+
+
+
+
+
+

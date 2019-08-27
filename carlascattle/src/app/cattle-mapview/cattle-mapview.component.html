@@ -1,0 +1,14 @@
+<div class="row map-shade">
+    <div class="col-12">&nbsp;</div>
+    <div class="col-12">
+        <ngui-map id = "map" class="margin-top mapsize" zoom="15" center="Thornton
+          Queensland , Australia" [fullscreenControl]="true" [fullscreenControlOptions]="{position: 'TOP_RIGHT'}" (mapReady$)="showLegend($event); createZoomPanel($event); showCattlesCustomMarkers($event)">
+            <polygon [editable]="true" [paths]="paths" [strokeColor]="'#FFC107'" [strokeOpacity]="0.8" [strokeWeight]="2"
+                     [fillColor]="'#FFC107'" [fillOpacity]="0.35"></polygon>
+
+            <info-window id="iw" [pixelOffset]="{ width: 0, height: 0 }" [disableAutoPan]="true" [zIndex]="9999">
+                <div><span [innerHtml]="statusMessage"></span></div>
+            </info-window>
+        </ngui-map>
+    </div>
+</div>
