@@ -72,9 +72,9 @@ export class CattleMapviewComponent implements OnInit {
         const contentDiv = document.createElement('div');
         let content;
         content = `<div class="legend-panel"><div><img class="custom-icon" src='./assets/images/cattle-safe.png' />
-          <span> Cattles well trained with CAEP</span></div>
+          <span> Cattles well trained with eShepherd</span></div>
           <div><img class="custom-icon" src='./assets/images/cattles-new-image.jpeg' />
-          <span> Cattles new to CAEP Program</span></div>
+          <span> Cattles new to eShepherd Program</span></div>
           <div><img class="custom-icon" src='./assets/images/cattles-warning.png' />
           <span> Cattles close to virtual fencing</span></div>
           <div><img class="custom-icon" src='./assets/images/cattles-danger.jpeg' />
