@@ -21,7 +21,6 @@ declare const MarkerClusterer: any;
     providers: [CattleDataSettingsService]
 })
 export class CattleMapviewComponent implements OnInit {
-    @ViewChild("iw", { static: false }) iw;
     @ViewChild(NguiMapComponent, { static: false }) nguiMapComponent: NguiMapComponent;
 
     positions = [];
@@ -137,15 +136,6 @@ export class CattleMapviewComponent implements OnInit {
             markerPositions.push(newObj);
         });
         return markerPositions;
-    }
-
-
-    onHover(event, data) {
-        this.statusMessage = "Cattle id : " + "<b>" + data.id + "</b><br>" + " Comment: " + data.desc + "<br>"+ "Status: " + "<img height='20px' src='" +data.icon+"' class='custom-icon'/>" ;
-        this.nguiMapComponent.openInfoWindow('iw',
-            data.customMarker
-        );
-
     }
 
     private getAllValues(object: object) {

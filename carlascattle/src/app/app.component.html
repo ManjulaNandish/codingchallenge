@@ -1,24 +1,3 @@
-<!--<nav-bar (navstatus)="OnNavBarClicked($event)"></nav-bar>
-<div class="container-fluid">
-
-  <ng-container *ngIf="navtoggle=='home' ">
-    <div class="row light-shade">
-      <div class="col-12" style="background-color: orange;" *ngIf="errorStatus">
-        <h3>Important Message</h3>
-        <p>
-          <b>The site is experiencing following Problem<br>: {{errorMessage}}</b>
-        </p>
-      </div>
-    </div>
-    <cattle-mapview *ngIf="navtoggle=='home'"></cattle-mapview>
-  </ng-container>
-  <cattle-listing *ngIf="navtoggle=='listing'"></cattle-listing>
-
-</div>
-<div style="height:1rem;">
-  &nbsp;
-</div>
-<nav-footer></nav-footer>-->
 <div>
   <nav-bar (navstatus)="OnNavBarClicked($event)"></nav-bar>
 </div>
